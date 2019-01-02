@@ -58,7 +58,7 @@ let ReportsScreen =  class ReportsScreen extends Component {
                 <td>{r.gameId}</td>
                 <td>{r.question}</td>
                 <td>{r.userAnswer}</td>
-                <td>{r.isValidAnswer}</td>
+                <td>{Boolean.prototype.toString(r.isValidAnswer)}</td>
                 <td>{r.created_at}</td>
                 </tr>
             ];
