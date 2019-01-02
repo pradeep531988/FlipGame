@@ -1,0 +1,52 @@
+.reports{
+    &__redTable {
+        border: 2px solid #A40808;
+        background-color: #EEE7DB;
+        width: 100%;
+        text-align: center;
+        border-collapse: collapse;
+      }
+       &__redTable td,  &__redTable th {
+        border: 1px solid #AAAAAA;
+        padding: 3px 2px;
+      }
+       &__redTable tbody td {
+        font-size: 13px;
+      }
+       &__redTable tr:nth-child(even) {
+        background: #F5C8BF;
+      }
+       &__redTable thead {
+        background: #A40808;
+      }
+       &__redTable thead th {
+        font-size: 19px;
+        font-weight: bold;
+        color: #FFFFFF;
+        text-align: center;
+        border-left: 2px solid #A40808;
+      }
+       &__redTable thead th:first-child {
+        border-left: none;
+      }
+      
+       &__redTable tfoot {
+        font-size: 13px;
+        font-weight: bold;
+        color: #FFFFFF;
+        background: #A40808;
+      }
+       &__redTable tfoot td {
+        font-size: 13px;
+      }
+       &__redTable tfoot .links {
+        text-align: right;
+      }
+       &__redTable tfoot .links a{
+        display: inline-block;
+        background: #FFFFFF;
+        color: #A40808;
+        padding: 2px 8px;
+        border-radius: 5px;
+      }
+}

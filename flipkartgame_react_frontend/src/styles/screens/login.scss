@@ -1,0 +1,102 @@
+.login {
+    background-color:maroon;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+
+    &__container {
+        left: 50%;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 600px;
+    }
+
+    &__title {
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        height: 97px;
+        margin: 0 auto 34px;
+        padding: 0;
+        text-indent: -9999px;
+        width: 339px;
+    }
+
+    &__text {
+        color: white;
+        font: font-open-sans-light(14px);
+    }
+
+    &__group {
+        margin: 0 auto 10px;
+        width: 300px;
+
+        .error {
+            color: white;
+            display: block;
+            font: font-open-sans-light(14px);
+            margin: 5px 0 10px;
+            text-align: left;
+        }
+    }
+
+    &__control {
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 10px;
+        box-sizing: border-box;
+        color: white;
+        font: font-open-sans-regular(14px);
+        padding: 10px 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    &__submit {
+        display:inline-block;
+        background-color: yellow;
+        border: none;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        color: text-starter;
+        text-decoration:none;
+        cursor: pointer;
+        font: include font-open-sans-bold(16px);
+        padding: 8px 0;
+        text-transform: uppercase;
+        text-align: center;
+        width: 150px;
+    }
+
+    &__register {
+        display:inline-block;
+        background-color: green;
+        border: none;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        color: text-starter;
+        text-decoration:none;
+        cursor: pointer;
+        font: include font-open-sans-bold(16px);
+        padding: 8px 0;
+        text-transform: uppercase;
+        text-align: center;
+        width: 150px;
+    }
+
+    &__loading{
+        display:none;
+        font: font-open-sans-extra-bold(12px);
+        text-transform:  uppercase;
+        color: white;
+        text-align: center;
+        margin-top: 15px;
+
+        &.active{
+            display:block;
+            
+        }
+    }
+}

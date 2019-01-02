@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
+
+<script type="text/javascript"
+	src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="webjars/jquery/1.9.1/jquery.min.js"></script>
+
+
+<link rel="stylesheet" type="text/css"
+	href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" />
+
+<link rel="stylesheet" th:href="@{/css/index.less}"
+	href="../../css/registration.less" />
+
+<script type="text/javascript" th:src="@{/js/index.js}"
+	src="../../js/registration.js"></script>
+
+<link rel="stylesheet" type="text/css"
+	href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
+
+<script type="text/javascript" charset="utf8"
+	src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+
+
+</head>
+<body>
+	<form action="#" th:action="@{/register}" th:object="${user}"
+		method="post">
+		<div class="row">
+			<div class="col-md-12">
+
+				<label for="userName">Please enter User Name </label> <input
+					id="userName" th:text="*{userName}" th:field="*{userName}">
+				</input>
+			</div>
+			<div class="col-md-12">
+
+				<label for="password">Please enter password </label> <input
+					id="password" type="password" th:password="*{password}" th:field="*{password}">
+				</input>
+			</div>
+			<div class="col-md-12">
+
+				<label for="secondPassword">Please Re-enter Password </label> <input
+					id="userName" type="password" th:password="*{secondPassword}" th:field="*{secondPassword}">
+				</input>
+			</div>
+		</div>
+		<input type="submit">
+	</form>
+</body>
+</html>
